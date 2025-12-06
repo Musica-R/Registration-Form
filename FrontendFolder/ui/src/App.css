@@ -1,0 +1,547 @@
+/* From Uiverse.io by DavidTM96 */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: inherit;
+  gap: 30px;
+  padding-inline: 2em;
+  padding-bottom: 0.4em;
+  background-color: #fafafa; /* changed */
+  border-radius: 20px;
+}
+
+.form-heading {
+  text-align: center;
+  margin: 2em;
+  color: #555555; /* changed */
+  font-size: 1.2em;
+  background-color: transparent;
+  align-self: center;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 10px;
+  padding: 0.8em;
+  border: none;
+  outline: none;
+  color: #333333; /* changed */
+  background-color: #e0e0e0; /* changed */
+  box-shadow: inset 2px 5px 10px rgba(200, 200, 200, 0.5); /* changed */
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #333333; /* changed */
+  padding-inline: 1em;
+}
+
+.sendMessage-btn {
+  cursor: pointer;
+  margin-bottom: 0em;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #8ca6db; /* changed */
+  color: #fff; /* changed */
+  font-weight: bold;
+  transition: all ease-in-out 0.3s;
+}
+
+.sendMessage-btn:hover {
+  background-color: #7083c0; /* changed */
+  color: #fff;
+  box-shadow: inset 2px 5px 10px rgba(200, 200, 200, 0.3);
+}
+
+.form-card1 {
+  background-image: linear-gradient(163deg, #8ca6db 0%, #7083c0 100%); /* changed */
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+.form-card1:hover {
+  box-shadow: 0px 0px 30px 1px rgba(140, 166, 219, 0.3); /* changed */
+}
+
+.form-card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.form-card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.sign-up-label {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5em;
+  font-size: 13px;
+  color: #555555; /* changed */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sign-up-link {
+  margin-left: 4px;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-color: #6b5b95; /* changed */
+  color: #6b5b95; /* changed */
+  cursor: pointer;
+  font-weight: 800;
+}
+
+/* From Uiverse.io by Yaya12085 */ 
+.form-containers {
+  width: 380px;
+  border-radius: 0.75rem;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 2rem;
+  color: rgba(243, 244, 246, 1);
+}
+
+.titles {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.forms {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.input-groups {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.input-groups label {
+  display: block;
+  color: rgba(156, 163, 175, 1);
+  margin-bottom: 4px;
+}
+
+.input-groups input {
+  width: 90%;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(55, 65, 81, 1);
+  outline: 0;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 0.75rem 1rem;
+  color: rgba(243, 244, 246, 1);
+}
+
+.input-groups input:focus {
+  border-color: rgba(167, 139, 250);
+}
+
+.forgots {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175,1);
+  margin: 8px 0 14px 0;
+}
+
+.forgots .p,.signups .p {
+  color: rgba(243, 244, 246, 1);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgots .p:hover, .signups .p:hover {
+  text-decoration: underline rgba(167, 139, 250, 1);
+}
+
+.signs {
+  display: block;
+  width: 100%;
+  background-color: rgba(167, 139, 250, 1);
+  padding: 0.75rem;
+  text-align: center;
+  color: rgba(17, 24, 39, 1);
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+}
+
+.social-messages {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.lines {
+  height: 1px;
+  flex: 1 1 0%;
+  background-color: rgba(55, 65, 81, 1);
+}
+
+.social-messages .messages {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(156, 163, 175, 1);
+}
+
+.social-iconss {
+  display: flex;
+  justify-content: center;
+}
+
+.social-iconss .icons {
+  border-radius: 0.125rem;
+  padding: 0.75rem;
+  border: none;
+  background-color: transparent;
+  margin-left: 8px;
+}
+
+.social-iconss .icons svg {
+  height: 1.25rem;
+  width: 1.25rem;
+  fill: #fff;
+}
+
+.signups {
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175, 1);
+}
+.p:hover{
+  cursor: pointer;
+}
+table{
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+
+.dashboard-container {
+  max-width: 100%;
+  margin: auto;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.welcome-text {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.welcome-text span {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.details-table th,
+.details-table td {
+  padding: 14px;
+  text-align: left;
+  border: 1px solid #e6e6e6;
+}
+
+
+.logout-btn {
+  padding: 12px 25px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #d93636;
+}
+/* Outer full-page container */
+.form-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Inner card box */
+.formss {
+  width: 360px;
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 18px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading */
+.form-headings {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+}
+
+/* Input field styling */
+.formss input {
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.formss input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0px 0px 6px rgba(74, 144, 226, 0.4);
+}
+
+/* Button styling */
+.formss button {
+  background: #4a90e2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.formss button:hover {
+  background: #3a7acc;
+}
+/* General body styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the forms */
+.form-container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Form headings */
+.form-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Input fields */
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="text"] {
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-container input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+    outline: none;
+}
+
+/* Buttons */
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+    background: #6a11cb;
+}
+
+/* Forgot password link */
+.form-container p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.form-container p:hover {
+    color: #2575fc;
+}
+
+/* Social login message */
+.social-messages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-messages .lines {
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.social-messages .messages {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* -------------------- MOBILE VIEW -------------------- */
+@media (max-width: 480px) {
+
+    /* Full page layout center */
+    body {
+        padding: 0;
+        margin: 0;
+        display: block;
+        height: auto;
+    }
+
+    /* Main form container */
+    .form-container,
+    .formss,
+    .form,
+    .form-containers {
+        width: 92% !important;
+        max-width: 92% !important;
+        margin: 20px auto !important;
+        padding: 20px 15px !important;
+        border-radius: 12px;
+    }
+
+    /* Headings */
+    .form-heading,
+    .titles,
+    .form-headings {
+        font-size: 1.2rem !important;
+        margin-bottom: 18px !important;
+    }
+
+    /* Input Fields */
+    input,
+    .input-field,
+    .formss input,
+    .input-groups input {
+        width: 80% !important;
+        padding: 12px !important;
+        font-size: 15px !important;
+    }
+
+    .input-groups label {
+        font-size: 13px !important;
+    }
+
+    /* Buttons */
+    button,
+    .sendMessage-btn,
+    .signs,
+    .formss button {
+        width: 100% !important;
+        padding: 12px !important;
+        font-size: 16px !important;
+    }
+
+    /* Reduce gap for forms */
+    .forms,
+    .form {
+        gap: 18px !important;
+    }
+
+    /* Social login buttons */
+    .social-iconss .icons {
+        padding: 10px !important;
+        margin: 5px;
+    }
+
+    /* Dashboard Table */
+    .table-container {
+        overflow-x: scroll;
+    }
+
+    .details-table {
+        font-size: 13px;
+    }
+
+    .details-table th,
+    .details-table td {
+        padding: 8px;
+    }
+
+    /* Logout button */
+    .logout-btn {
+        width: 100% !important;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Reduce card shadow and radius for smooth mobile look */
+    .form-card,
+    .form-card1,
+    .form-card2 {
+        box-shadow: none !important;
+        border-radius: 10px !important;
+    }
+}
+
