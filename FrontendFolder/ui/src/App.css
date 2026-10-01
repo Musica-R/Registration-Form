@@ -67,6 +67,7 @@
   background-image: linear-gradient(163deg, #8ca6db 0%, #7083c0 100%); /* changed */
   border-radius: 22px;
   transition: all 0.3s;
+  width: 150%;
 }
 
 .form-card1:hover {
@@ -528,7 +529,9 @@ body {
     .details-table td {
         padding: 8px;
     }
-
+    .form-card1{
+          width: 100%;
+    }
     /* Logout button */
     .logout-btn {
         width: 100% !important;

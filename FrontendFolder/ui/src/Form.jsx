@@ -47,7 +47,6 @@ export default function Form() {
 
         setFromdata({ name: "", email: "", password: "", confirm_password: "", mobile_number: "" })
 
-
     }
 
 

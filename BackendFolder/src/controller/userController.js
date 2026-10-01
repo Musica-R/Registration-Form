@@ -67,16 +67,16 @@ export const Loginform = async (req, res) => {
     if (!passwordMatch)
       return res.status(400).json({ message: "Incorrect password" });
 
-   
+
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
     const otpExpires = new Date(Date.now() + 5 * 60 * 1000);
 
-    
+
     user.otp = otp;
     user.otpExpires = otpExpires;
     await user.save();
 
-   
+
     const client = twilio(
       process.env.TWILIO_ACCOUNT_SID,
       process.env.TWILIO_AUTH_TOKEN
@@ -84,8 +84,8 @@ export const Loginform = async (req, res) => {
 
     await client.messages.create({
       body: `Your login OTP is: ${otp}`,
-      from: process.env.TWILIO_PHONE_NUMBER, 
-      to: "+91"+user.mobile_number,              
+      from: process.env.TWILIO_PHONE_NUMBER,
+      to: "+91" + user.mobile_number,
     });
 
     console.log("OTP sent:", otp);
@@ -117,7 +117,7 @@ export const VerifyOTP = async (req, res) => {
       return res.status(400).json({ message: "Invalid OTP" });
     }
 
-   
+
     user.otp = null;
     user.otpExpires = null;
     await user.save();
@@ -129,6 +129,7 @@ export const VerifyOTP = async (req, res) => {
     );
 
     return res.status(200).json({
+
       message: "OTP verified successfully",
       token,
       userId: user._id,
@@ -160,13 +161,15 @@ export const DashboardPage = async (req, res) => {
 
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
   }
-
 });
+
 
 // // Optional: verify transporter
 // transporter.verify((err, success) => {
